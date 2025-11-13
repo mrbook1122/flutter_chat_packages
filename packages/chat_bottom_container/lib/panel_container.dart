@@ -5,7 +5,7 @@
  */
 
 import 'package:chat_bottom_container/constants.dart';
-import 'package:chat_bottom_container/listener_manager.dart';
+// import 'package:chat_bottom_container/listener_manager.dart';
 import 'package:chat_bottom_container/typedef.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -147,9 +147,9 @@ class _ChatBottomPanelContainerState<T>
   void setup() async {
     safeAreaBottom = widget.safeAreaBottom ?? 0;
     widget.controller._attachState(this);
-    chatKeyboardManagerId = ChatBottomContainerListenerManager().register(
-      onKeyboardHeightChange,
-    );
+    // chatKeyboardManagerId = ChatBottomContainerListenerManager().register(
+    //   onKeyboardHeightChange,
+    // );
 
     inputFocusNode.addListener(inputFocusNodeListener);
 
@@ -188,7 +188,7 @@ class _ChatBottomPanelContainerState<T>
   @override
   void dispose() {
     widget.controller._detachState();
-    ChatBottomContainerListenerManager().unregister(chatKeyboardManagerId);
+    // ChatBottomContainerListenerManager().unregister(chatKeyboardManagerId);
     inputFocusNode.removeListener(inputFocusNodeListener);
     super.dispose();
   }
