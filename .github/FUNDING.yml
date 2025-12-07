@@ -12,5 +12,6 @@
 # lfx_crowdfunding: # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
 # custom: # Replace with up to 4 custom sponsorship URLs e.g., ['link1', 'link2']
 
+github: LinXunFeng
 ko_fi: linxunfeng
 custom: ['https://cdn.jsdelivr.net/gh/FullStackAction/PicBed@resource20220417121922/image/202303181116760.jpeg', 'https://cdn.jsdelivr.net/gh/FullStackAction/PicBed@resource20230813121546/image/202406172130257.jpg']
